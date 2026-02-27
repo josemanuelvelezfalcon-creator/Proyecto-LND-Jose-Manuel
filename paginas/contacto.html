@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto-CHACHOFONE</title>
+    <link rel="stylesheet" href="../estilos.css">
+    <link rel="shortcut icon" href="../imagenes/logoinicio.png" type="image/x-icon">
+</head>
+<body>
+<!--------------------------------------CABECERA------------------------------------>
+    <header class="cabecera">
+        <div class="logo">
+            <img src="../imagenes/logo1.png" alt="">
+        </div>
+        <div class="bienvenida">
+            <h1>¡Contacta con nosotros y resuelve tus dudas!</h1>
+        </div>
+        <div class="menu">
+            <a href="../index.html">Inicio</a>
+            <a href="productos.html">Productos</a>
+            <a href="sobrenosotros.html">Sobre nosotros</a>
+        </div>
+    </header>
+<!--------------------------------------SECCIÓN PRINCIPAL------------------------------------>
+    <section class="contacto">
+        <div class="formulario">
+            <form action="">
+                <h2>Formulario de contacto</h2><br>
+                <label for="">Nombre</label><br>
+                <input type="text"><br><br>
+                <label for="">Apellidos</label><br>
+                <input type="text"><br><br>
+                <label for="">E-mail</label><br>
+                <input type="email"><br><br>
+                <label for="">Teléfono</label><br>
+                <input type="tel"><br><br>
+                <label for="">Motivo de contacto:</label><br>
+                <select id="" name="" required>
+                    <option value="">-- Selecciona una opción --</option>
+                    <option value="consulta">Consulta</option>
+                    <option value="queja">Queja</option>
+                    <option value="sugerencia">Sugerencia</option>
+                    <option value="otro">Otro</option>
+                </select><br><br>
+                <label for="mensaje">Dudas y quejas:</label><br>
+                <textarea id="" name="mensaje" rows="5" cols="40"></textarea><br><br>
+                <button class="botonenviar">ENVIAR</button>
+            </form>
+        </div>
+        <div class="mapa">
+            <h2>¡Encuentranos aquí!</h2><br>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2574.2089318865374!2d-15.435573084104659!3d28.134188154732282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2ses!4v1770973983729!5m2!1ses!2ses" 
+                width="600" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade" 
+                class="mapa">
+            </iframe>
+        </div>
+    </section>
+<!--------------------------------------PIE DE PÁGINA------------------------------------>
+    <footer class="pie">
+        <div class="logopie">
+            <img src="../imagenes/logo1.png" alt="">
+        </div>
+        <div class="copyright">
+            <p>&copy;Web hecha por Jose Manuel. (www.CHACHOFONE.com) Todos los derechos reservados.</p>
+        </div>
+        <div class="rrss">
+            <img src="../imagenes/facebook.webp" alt="">
+            <img src="../imagenes/instagram.png" alt="">
+            <img src="../imagenes/x.png" alt="">
+        </div>
+    </footer>
+</body>
+</html>

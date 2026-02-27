@@ -61,6 +61,7 @@
 /*------------------------------------------------------------------Pestaña INICIO---------------------------------------------------------*/
 .principal{
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(imagenes/fondoinicio.webp);
+    /*Lo anterior, referido al linear-gradient, es para que la imagen del fondo se vea más oscura para que el texto se pueda distinguir bien.*/
     width: 100%;
     height: 1000px;
     text-align: center;
@@ -73,4 +74,226 @@
     font-size: large;
     font-weight: bold;
 }
+/*------------------------------------------------------------------Pestaña CONTACTO---------------------------------------------------------*/
+.contacto{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*justify-content: space-between;*/
+    /*align-content: center;*/
+    /*align-items: center;*/
+    /*text-align: center;*/
+}
+.formulario{
+    width: 50%;
+}
+form{
+    margin-left: 50px;
+    margin-top: 30px;
+}
+.botonenviar{
+    padding: 10px 20px;
+    color: black;
+    font-weight: bold;
+    background-color: cornflowerblue;
+    border-radius: 6px;
+    margin-left: 120px;
+}
+.formulario input{
+    width: 400px;
+    height: 30px;
+}
+.mapa{
+    width: 50%;
+    height: 400px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
 /*------------------------------------------------------------------Pestaña PRODUCTOS---------------------------------------------------------*/
+.smartphones{
+    width: 100%;
+    text-align: center;
+}
+.smartphones img{
+    width: 250px;
+    height: auto;
+}
+.smartphones h1{
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.smartphones a{
+    text-decoration: none;
+    color: black;
+}
+.videopromocional{
+    text-align: center;
+    margin-bottom: 15px;
+}
+.moviles{
+    text-align: center;
+    margin: 50px;
+    display: inline-block;
+}
+.moviles p{
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+/*Pequeño hover para que se vea mejor*/
+.moviles:hover{
+    background-color: mediumturquoise;
+}
+/*---------------------------------------------------------------------SOBRE NOSOTROS-----------------------------------------------------------*/
+.sobrenosotros {
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    padding: 40px 20px;
+    align-items: center;
+}
+.desc {
+    max-width: 1200px;
+    text-align: justify;
+    color: black;
+}
+.gif{
+    padding-top: 80px;
+}
+/*---------------------------------------------------------------------CARRUSEL DE IMÁGENES-----------------------------------------------------------*/
+.carrusel {
+    width: 400px;
+    margin: auto;
+    height: 800px;
+}
+
+/* Contenedor imagen grande */
+.slider {
+    position: relative;
+    height: 350px;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.slide img {
+    width: 100%;
+}
+
+/* Imagen por defecto */
+#slide1 {
+    opacity: 1;
+}
+
+/* Miniaturas */
+.imgcarrusel {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.imgcarrusel img {
+    width: 300px;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.imgcarrusel img:hover {
+    border-color: #007bff;
+}
+
+/* CAMBIO DE IMAGEN CON :has() */
+.carrusel:has(.imgcarrusel li:nth-child(1):hover) #slide1,
+.carrusel:has(.imgcarrusel li:nth-child(2):hover) #slide2,
+.carrusel:has(.imgcarrusel li:nth-child(3):hover) #slide3,
+.carrusel:has(.imgcarrusel li:nth-child(4):hover) #slide4,
+.carrusel:has(.imgcarrusel li:nth-child(5):hover) #slide5 {
+    opacity: 1;
+}
+
+/* Ocultar las demás cuando hay hover */
+.carrusel:has(.imgcarrusel li:hover) .slide {
+    opacity: 0;
+}
+.imgcarrusel li a{
+    text-decoration: none;
+    color: black;
+}
+/*----------------------------------------------------MEDIA QUERIES----------------------------------------------------*/
+@media (max-width: 768px) {
+
+    /* CABECERA */
+    .cabecera {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .menu {
+        margin-right: 0;
+    }
+
+    /* CONTACTO */
+    .contacto {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .formulario,
+    .mapa {
+        width: 100%;
+    }
+
+    .formulario input {
+        width: 90%;
+    }
+
+    /* PRODUCTOS */
+    .moviles {
+        display: block;
+        margin: 20px auto;
+    }
+
+    .smartphones img {
+        width: 200px;
+    }
+
+    /* CARRUSEL */
+    .carrusel {
+        width: 100%;
+        height: auto;
+    }
+
+    .imgcarrusel img {
+        width: 120px;
+    }
+}
+@media (min-width: 1200px) {
+
+    .smartphones {
+        max-width: 1400px;
+        margin: auto;
+    }
+
+    .contacto {
+        max-width: 1400px;
+        margin: auto;
+    }
+
+    .sobrenosotros {
+        max-width: 1400px;
+        margin: auto;
+    }
+}
