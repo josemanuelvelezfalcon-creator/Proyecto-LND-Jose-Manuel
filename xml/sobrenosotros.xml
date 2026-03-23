@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"> 
+  <channel> 
+    <title>CHACHOFONE</title> 
+    <link>http://127.0.0.1:5500/index.html</link> 
+    <description>Nuevos móviles de Oppo</description> 
+    <language>es-es</language> 
+    
+    <atom:link href="http://127.0.0.1:5500/xml/RSS.xml" rel="self" type="application/rss+xml" />
+
+    <item> 
+      <title>Lanzamiento del Oppo A6 Pro</title> 
+      <link>http://127.0.0.1:5500/index.html</link> 
+      <description>Nuevo Oppo A6 Pro: Potencia y rendimiento de última generación.</description> 
+      <guid isPermaLink="false">oppo-a6-pro-001</guid> 
+      <enclosure url="https://www.oppo.com/content/dam/oppo/common/mkt/v2-2/a6-pro-series/featured-products/640-640-tai.png" length="0" type="image/png" /> 
+    </item> 
+
+    <item> 
+      <title>Lanzamiento del Oppo A6</title> 
+      <link>http://127.0.0.1:5500/index.html</link> 
+      <description>Nuevo Oppo A6: El equilibrio perfecto entre diseño y funcionalidad.</description> 
+      <guid isPermaLink="false">oppo-a6-002</guid> 
+      <enclosure url="https://www.oppo.com/content/dam/oppo/common/mkt/v2-2/a6-series/b4/featured-products/a6/640-640-gold.png" length="0" type="image/png" /> 
+    </item> 
+
+    <item> 
+      <title>Lanzamiento del Oppo A6x</title> 
+        <link>http://127.0.0.1:5500/index.html</link> 
+        <description>Nuevo Oppo A6x: Innovación y estilo en color azul.</description> 
+        <guid isPermaLink="false">oppo-a6x-003</guid> 
+        <enclosure url="https://www.oppo.com/content/dam/oppo/common/mkt/v2-2/a6-series/b4/featured-products/a6x/640-640-blue.png" length="0" type="image/png" /> 
+      </item> 
+
+    </channel> 
+  </rss>
